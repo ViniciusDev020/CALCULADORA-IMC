@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Calculadora IMC</title>
+    <link rel="icon" href="./assets/icone_coração.png">
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input {
+
+            border-style: solid;
+            border-radius: 15px;
+            border-width: thin;
+            border-color: rgb(47, 162, 182);
+            margin-top: 6px;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+
+        }
+
+        #caixa {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(240, 248, 255, 0.772);
+            display: inline-block;
+            text-align: center;
+            padding: 20px;
+            margin-left: 40%;
+            width: 300px;
+            margin-bottom: 5%;
+
+
+
+        }
+
+        h1 {
+
+            color: rgb(99, 159, 214)
+
+
+
+
+
+
+
+        }
+
+        h2 {
+
+            color: rgb(47, 162, 182)
+        }
+
+        label {
+
+            font-weight: 600;
+            color: rgb(47, 162, 182);
+
+
+
+
+        }
+
+        #class {
+
+            box-sizing: border-box;
+
+
+
+        }
+
+        #saibamais {
+
+            margin: auto;
+            width: 50%;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+             background-color: rgb(99, 159, 214);
+            font-size: 14px;
+            border-style: solid;
+            border-radius: 15px;
+            border-width: 1px;
+            padding: 2px;
+
+
+        }
+
+        #explanation {
+
+            display: none;
+
+
+        }
+
+        p {
+
+            font-size: small;
+            color: rgb(99, 159, 214)
+
+        }
+
+        #calcular {
+            font-weight: 600;
+            border-radius: 15px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(99, 159, 214);
+            cursor: pointer;
+            margin-bottom: 20px;
+
+        }
+
+
+
+
+        #praticas_s {
+            background-color: rgba(240, 248, 255, 0.772);
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            width: 100%;
+            height: 220px;
+            padding: 10px;
+            margin-bottom: 5%;
+
+
+        }
+
+        ol {
+
+            color: rgb(11, 87, 120);
+            display: block;
+
+        }
+
+        iframe {
+
+
+            margin-left: 6%;
+            border-style: none;
+        }
+
+
+
+        #coracao {
+
+            display: block;
+            margin: auto;
+            margin-bottom: 5px;
+            filter: sepia(80%);
+
+            animation-name: mudarcor;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes mudarcor {
+            0% {
+                filter: sepia(70%)
+            }
+
+            25% {
+                filter: sepia(50%)
+            }
+
+            50% {
+                filter: sepia(25%)
+            }
+
+            100% {
+                filter: sepia(0%)
+            }
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+           
+        }
+
+        #calculaT {
+
+            display: block;
+            margin: auto;
+        }
+
+        #ulist {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900px;
+            list-style-type: none;
+            display: inline-block;
+
+        }
+
+
+        @media only screen and (max-width:800px) {
+
+            body {
+                transform: scale(1.0);
+            }
+
+            #caixa {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #5698c4c5;
+                color: white;
+                border-radius: 15px;
+                display: inline-block;
+                text-align: center;
+                padding: 20px;
+                margin-left: 5%;
+                width: 300px;
+                height: 600px;
+                margin-bottom: 5%;
+                margin-top: 10px;
+
+            }
+
+
+            iframe {
+
+                margin-left: 8%;
+                margin-top: 9%;
+                width: 320px;
+                height: 200px;
+                border-style: none;
+
+            }
+
+            h1 {
+
+                color: rgb(255, 255, 255);
+
+            }
+
+            h2 {
+
+                color: rgb(255, 255, 255)
+            }
+
+            label {
+
+                color: white;
+            }
+
+            #pratica {
+                color: #5698c4c5;
+                width: 100%;
+
+            }
+
+            #coracao {
+
+                display: block;
+                margin: auto;
+                margin-bottom: 5px;
+                filter: sepia(80%);
+                animation-name: mudarcor;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+
+            }
+
+            @keyframes mudarcor {
+                0% {
+                    filter: sepia(70%)
+                }
+
+                25% {
+                    filter: sepia(50%)
+                }
+
+                50% {
+                    filter: sepia(25%)
+                }
+
+                100% {
+                    filter: sepia(0%)
+                }
+            }
+
+            input {
+
+                border-style: solid;
+                border-radius: 15px;
+                border-width: thin;
+                border-color: rgb(47, 162, 182);
+                margin-top: 6px;
+                width: 100%;
+                padding: 13px;
+                font-size: 20px;
+                box-sizing: border-box;
+                background-color: rgb(255, 255, 255);
+
+            }
+
+            #calcular {
+                font-weight: 600;
+                border-radius: 15px;
+                color: rgb(255, 255, 255);
+                background-color: rgb(99, 159, 214);
+                cursor: pointer;
+                margin-bottom: 20px;
+                border-color: aliceblue;
+            }
+
+            #saibamais {
+
+                margin: auto;
+                width: 50%;
+                cursor: pointer;
+                color: rgb(255, 255, 255);
+                background-color: rgb(99, 159, 214);
+                font-size: 14px;
+                border-style: solid;
+                border-radius: 15px;
+                border-width: 1px;
+                padding: 2px;
+
+
+            }
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div id="caixa" class="caixa">
+            <h2>CALCULADORA <BR> IMC</h2>
+            <img id='coracao' src="./assets/icone_coração.png">
+            <label>Informe seu peso em Kg</label> <br>
+            <input id='peso' type='number' placeholder="Peso em KG"> <br> <br>
+            <label>Informe sua altura em metros</label> <Br>
+            <input id='altura' type='number' placeholder="Altura em metros"> <br> <br>
+            <h1 id="resultado"></h1>
+            <h1 id="class"></h1>
+            <input onmouseover='brilhocalc()' onmouseout='dark()' id='calcular' type='button' value="Calcular IMC">
+            <h6 id="saibamais"  onmouseout='dark()' onmouseover="brilhosb()">Saiba Mais</h6>
+            <p id="explanation">O IMC (Índice de Massa Corporal) é utilizado como parâmetro internacional para
+                identificar sobrepeso, obesidade grau 1, 2 ou 3 em crianças, adultos e idosos.
+            </p>
+
+            <script src="/script.js"></script>
+        </div>
+
+        <div id="praticas_s">
+
+            <h2 id="pratica">4 Práticas Saudáveis:</h2>
+
+            <ol>
+
+                <li>Beba bastante água.</li> <br>
+                <li>Pratique exercícios regularmente.</li> <br>
+                <li>Durma bem.</li> <br>
+                <li>Tenha uma boa alimentação.</li>
+            </ol>
+
+        </div>
+
+        <iframe width="500" height="345" src=https://www.youtube.com/embed/w6lqLoSOcLI>
+        </iframe>
+
+        <iframe width="500" height="345" src=https://www.youtube.com/embed/Gnh3dwps_jE></iframe>
+        </iframe>
+
+    </section>
+</body>
+
+
+
+
+</html>
